@@ -1,0 +1,41 @@
+$theme-colors: (
+  "primary": #fc5000,
+  "secondary": #535353,
+  "black": #050303,
+  "custom-grey": #ccc,
+  "clearer": #eee
+  );
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+.App {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  ;
+}
+h1 {font-size: 1.5em;}
+h2 {font-size: 1.3em;}
+h3 {font-size: 1.2em;}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
