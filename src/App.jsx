@@ -35,7 +35,7 @@ class App extends React.Component {
       .then(summ => {
        // console.log(summ)
         this.setState({ global: summ.data.Global, countryList: summ.data.Countries })
-        console.log(this.state.countryList)
+        //console.log(this.state.countryList)
       })
       .catch(error => {
         console.log("error", error);
@@ -49,15 +49,16 @@ class App extends React.Component {
   }
 
   render() {
+    //build dropdown selector
     let optionsArray = [];
-    //console.log(typeof(this.state.covid), this.state.covid);
+    
      this.state.countryList.forEach(item => {
       let ob = {};
       ob.value = item.Country;
       ob.label = item.Country;
       optionsArray.push(ob);
     });
-   //console.log(optionsArray);
+ 
 
 
     return (
